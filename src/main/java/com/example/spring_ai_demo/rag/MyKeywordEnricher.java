@@ -1,0 +1,25 @@
+package com.example.spring_ai_demo.rag;
+
+import java.util.List;
+
+import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.document.Document;
+import org.springframework.ai.model.transformer.KeywordMetadataEnricher;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+/**
+ * 基于 AI 的文档元信息增强器（为文档补充元信息）
+ */
+@Component
+public class MyKeywordEnricher {
+    
+    @Autowired
+    private ChatModel dashscopeChatModel;
+
+    public List<Document> enrichDocuments(List<Document> docs){
+        KeywordMetadataEnricher keywordMetadataEnricher = new KeywordMetadataEnricher(dashscopeChatModel, 5);
+        return keywordMetadataEnricher.apply(docs);
+    }
+    
+}
