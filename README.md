@@ -1,4 +1,4 @@
-# Spring AI Enterprise Demo (Spring AI 企业级架构与应用落地示例)
+# Spring AI  Demo (Spring AI 应用落地示例)
 
 [![Java Version](https://img.shields.io/badge/Java-17%20%2F%2021-oracle.svg)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2%20%2F%203.3-green.svg)](https://spring.io/projects/spring-boot)
@@ -34,7 +34,7 @@
 | **JDK** | 21 | 核心开发环境，充分利用 Record 等新特性 |
 | **Spring Boot** | 3.4.x | 基础微服务框架 |
 | **Spring AI** | 1.0.0-M1+ | AI 能力核心抽象层 |
-| **Vector Database** | Pgvector / Ollama | 向量数据存储与嵌入 |
+| **Vector Database** | Pgvector | 向量数据存储与嵌入 |
 | **Docker** | 20.10+ | 用于快速本地化部署向量库与 Ollama |
 | **Build Tool** | Maven 3.9+ | 项目构建与依赖管理 |
 
